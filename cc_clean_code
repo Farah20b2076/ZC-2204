@@ -20,7 +20,7 @@ public class MyFruits {
     }
     
     if (hw == 0){                                               # checks if there are homework to be done, with assigned variable specifically for number of homeworks
-        System.out.println("No homework!");
+        System.out.println("No homework!");                     # specified and distincted name for each variable prevent confusion and misplace of variables !
     } else {
         System.out.println("Get your homework done please!");
     }
