@@ -1,0 +1,30 @@
+#finds out if needed to buy more item and checks if have homework
+
+import java.util.Scanner;
+
+public class MyFruits {
+  
+  public static void main(String[] args){
+    Scanner scan = new Scanner(System.in);
+    System.out.print("Enter current number of fruits: ");
+    int fruit = scan.nextInt();                                 # number of fruits are assigned to a variable named fruit
+    System.out.println("Enter number of homework: "); 
+    int hw = scan.nextInt();                                    # number of hw are assigned to a variable named hw
+    
+    if (fruit < 3){                                             # to check if need to buy more fruits with the named variable specifically for number of fruits
+        System.out.println("Buy More");
+    } else if (fruit >= 4 && fruit < 10){
+        System.out.println("Just enough");
+    } else if(fruit == 10){
+        System.out.println("Full in stock");
+    }
+    
+    if (hw == 0){                                               # checks if there are homework to be done, with assigned variable specifically for number of homeworks
+        System.out.println("No homework!");
+    } else {
+        System.out.println("Get your homework done please!");
+    }
+    
+  }
+    
+}
